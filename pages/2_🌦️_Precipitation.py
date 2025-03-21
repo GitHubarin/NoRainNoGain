@@ -293,15 +293,7 @@ if precipitation_data is not None:
         # Interpretation of precipitation trends
         with tab2:
             st.subheader("Spatial Distribution of Precipitation")
-            
-            # Year selector for spatial analysis
-            selected_year = st.selectbox(
-                "Select Year for Spatial Analysis",
-                options=years,
-                index=len(years)-1,
-                key="spatial_year_selectbox"
-            )
-            
+                        
             # Add a selectbox for choosing a year or all years combined
             year_options = ["All Years"] + [str(x) for x in years]
             selected_year_option = st.selectbox(
